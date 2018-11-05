@@ -16,7 +16,6 @@ app.controller('controller_list', function($scope,$http) {
 
 app.controller('controller_mosaic', function($scope,$http) {
   $scope.$watch('selectedBreed',function(){
-    //const params = new HttpParams().set('breed', $scope.selectedBreed);
     $http.get('https://dog.ceo/api/breed/'+$scope.selectedBreed+'/images').then(function(response){
       $scope.stats = response.data.status;
       var json_response = response.data.message;
