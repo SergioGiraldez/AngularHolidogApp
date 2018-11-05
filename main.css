@@ -1,0 +1,28 @@
+html, body{
+  height: 100%;
+  font-size: 1.6em;
+}
+#container{
+  width: 80vw;
+  height: 100%;
+  align-content: center;
+  margin: auto;
+  padding-top: 5vw;
+}
+#breed-selection-div select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 77vw;
+  margin: 0 1.5vw;
+  padding: 5px 10px;
+}
+#breed-image-mosaic img{
+  width: 11vw;
+  height: 10vw;
+}
+#breed-image-mosaic{
+  height: 100%;
+  margin-top: 3vw;
+  margin-left: 1.5vw;
+}
