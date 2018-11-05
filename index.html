@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<body>
-  <div id="breed-selection-div" ng-app="breed-selection" ng-controller="controller">
+<body ng-app="breed-selection">
+  <div id="breed-selection-div" ng-app="breed-selection" ng-controller="controller_list">
 
-    <select ng-model="selectedName" ng-options="x for x in breeds">
+    <select ng-model="$parent.selectedBreed" ng-options="x for x in breeds">
     </select>
 
   </div>
 
-  <div id="breed-image-mosaic">
-
+  <div id="breed-image-mosaic" ng-controller="controller_mosaic">
+    <img ng-repeat="x in images" ng-src="{{x}}" height="100" width="100">
   </div>
 
   <script src="app.js"></script>
