@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
+  <div id="breed-selection-div" ng-app="breed-selection" ng-controller="controller">
 
-<script src="script.js"></script>
+    <select ng-model="selectedName" ng-options="x for x in breeds">
+    </select>
+
+  </div>
+
+  <div id="breed-image-mosaic">
+
+  </div>
+
+  <script src="app.js"></script>
+  <script src="controller.js"></script>
+
 </body>
 </html>
